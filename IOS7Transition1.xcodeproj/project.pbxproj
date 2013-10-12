@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0E8DB01807E22D0010249A /* CustomizedAnimator1.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0E8DAF1807E22D0010249A /* CustomizedAnimator1.m */; };
 		CD9057071806B28800AC759A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9057061806B28800AC759A /* Foundation.framework */; };
 		CD9057091806B28800AC759A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9057081806B28800AC759A /* CoreGraphics.framework */; };
 		CD90570B1806B28800AC759A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD90570A1806B28800AC759A /* UIKit.framework */; };
@@ -22,6 +23,7 @@
 		CD90572B1806B28800AC759A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD90570A1806B28800AC759A /* UIKit.framework */; };
 		CD9057331806B28800AC759A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD9057311806B28800AC759A /* InfoPlist.strings */; };
 		CD9057351806B28800AC759A /* IOS7Transition1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9057341806B28800AC759A /* IOS7Transition1Tests.m */; };
+		CDA3EB751808027A00990E7D /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA3EB741808027A00990E7D /* ViewController1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD0E8DAE1807E22D0010249A /* CustomizedAnimator1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedAnimator1.h; sourceTree = "<group>"; };
+		CD0E8DAF1807E22D0010249A /* CustomizedAnimator1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedAnimator1.m; sourceTree = "<group>"; };
 		CD9057031806B28800AC759A /* IOS7Transition1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS7Transition1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9057061806B28800AC759A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD9057081806B28800AC759A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +60,8 @@
 		CD9057301806B28800AC759A /* IOS7Transition1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOS7Transition1Tests-Info.plist"; sourceTree = "<group>"; };
 		CD9057321806B28800AC759A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD9057341806B28800AC759A /* IOS7Transition1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOS7Transition1Tests.m; sourceTree = "<group>"; };
+		CDA3EB731808027A00990E7D /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		CDA3EB741808027A00990E7D /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,10 @@
 				CD90571F1806B28800AC759A /* EFDetailViewController.m */,
 				CD9057211806B28800AC759A /* Images.xcassets */,
 				CD90570D1806B28800AC759A /* Supporting Files */,
+				CD0E8DAE1807E22D0010249A /* CustomizedAnimator1.h */,
+				CD0E8DAF1807E22D0010249A /* CustomizedAnimator1.m */,
+				CDA3EB731808027A00990E7D /* ViewController1.h */,
+				CDA3EB741808027A00990E7D /* ViewController1.m */,
 			);
 			path = IOS7Transition1;
 			sourceTree = "<group>";
@@ -257,6 +267,8 @@
 			files = (
 				CD9057201806B28800AC759A /* EFDetailViewController.m in Sources */,
 				CD9057131806B28800AC759A /* main.m in Sources */,
+				CDA3EB751808027A00990E7D /* ViewController1.m in Sources */,
+				CD0E8DB01807E22D0010249A /* CustomizedAnimator1.m in Sources */,
 				CD90571D1806B28800AC759A /* EFMasterViewController.m in Sources */,
 				CD9057171806B28800AC759A /* EFAppDelegate.m in Sources */,
 			);
@@ -467,6 +479,7 @@
 				CD90573A1806B28800AC759A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD90573B1806B28800AC759A /* Build configuration list for PBXNativeTarget "IOS7Transition1Tests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +488,7 @@
 				CD90573D1806B28800AC759A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,8 +7,9 @@
 //
 
 #import "EFDetailViewController.h"
+#import "CustomizedAnimator1.h"
 
-@interface EFDetailViewController ()
+@interface EFDetailViewController ()<UIViewControllerTransitioningDelegate>
 - (void)configureView;
 @end
 
@@ -48,4 +49,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    [super prepareForSegue:segue sender:sender];
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+    if ([segue.identifier isEqualToString:@"goto2"]) {
+        NSLog(@"go to 2");
+        
+        UIViewController *toVC = segue.destinationViewController;
+        toVC.transitioningDelegate = self;
+        toVC.modalPresentationStyle = UIModalPresentationCustom;
+        [UIView animateWithDuration:.3 animations:^{
+            //toVC.view.backgroundColor = [UIColor magentaColor];
+        }];
+    }
+}
+
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
+    
+    CustomizedAnimator1 *a1 = [CustomizedAnimator1 new];
+    a1.presenting = YES;
+    return a1;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed{
+    CustomizedAnimator1 *a1 = [CustomizedAnimator1 new];
+    return a1;
+}
 @end
